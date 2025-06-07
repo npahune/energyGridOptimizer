@@ -1,0 +1,130 @@
+[
+  {
+    "epic": "System Setup & Data Infrastructure",
+    "stories": [
+      {
+        "id": "1.1",
+        "title": "Define Supabase schema",
+        "description": "As a developer, I want to define the Supabase schema, so that energy data can be stored and queried efficiently.",
+        "priority": "High",
+        "estimate_days": 1
+      },
+      {
+        "id": "1.2",
+        "title": "Seed initial data",
+        "description": "As a data engineer, I want to seed initial data for locations and energy sources, so the optimization APIs can be tested.",
+        "priority": "High",
+        "estimate_days": 0.5
+      },
+      {
+        "id": "1.3",
+        "title": "Supabase client integration",
+        "description": "As a developer, I want to connect the Supabase client to my backend, so the APIs can store and retrieve data.",
+        "priority": "High",
+        "estimate_days": 0.5
+      }
+    ]
+  },
+  {
+    "epic": "Forecasting Engine (QNN or Fallback ML)",
+    "stories": [
+      {
+        "id": "2.1",
+        "title": "Forecast energy load (QNN)",
+        "description": "As a system operator, I want to forecast energy demand using past data, so I can plan resource usage.",
+        "priority": "High",
+        "estimate_days": 2
+      },
+      {
+        "id": "2.2",
+        "title": "/forecast API",
+        "description": "As a developer, I want a REST API `/forecast` that returns load predictions per location and hour.",
+        "priority": "High",
+        "estimate_days": 1
+      },
+      {
+        "id": "2.3",
+        "title": "Forecast logging & accuracy",
+        "description": "As a data scientist, I want to log model predictions and actuals, so I can evaluate model accuracy.",
+        "priority": "Medium",
+        "estimate_days": 1
+      }
+    ]
+  },
+  {
+    "epic": "Grid Switching Optimization",
+    "stories": [
+      {
+        "id": "3.1",
+        "title": "Optimize grid switching",
+        "description": "As a grid manager, I want to optimize energy source switching based on cost and availability.",
+        "priority": "High",
+        "estimate_days": 1.5
+      },
+      {
+        "id": "3.2",
+        "title": "/optimize-switching API",
+        "description": "As a developer, I want a REST API `/optimize-switching` that returns a source schedule.",
+        "priority": "High",
+        "estimate_days": 1
+      }
+    ]
+  },
+  {
+    "epic": "Battery Storage Optimization",
+    "stories": [
+      {
+        "id": "4.1",
+        "title": "Optimize battery schedule",
+        "description": "As a battery operator, I want to generate a charge/discharge plan based on load and cost.",
+        "priority": "Medium",
+        "estimate_days": 1.5
+      },
+      {
+        "id": "4.2",
+        "title": "/optimize-battery API",
+        "description": "As a developer, I want a REST API `/optimize-battery` that returns a schedule of battery actions.",
+        "priority": "Medium",
+        "estimate_days": 1
+      }
+    ]
+  },
+  {
+    "epic": "Testing & Evaluation",
+    "stories": [
+      {
+        "id": "5.1",
+        "title": "API test coverage",
+        "description": "As a QA engineer, I want unit tests for each endpoint, so I can verify correct behavior.",
+        "priority": "High",
+        "estimate_days": 1
+      },
+      {
+        "id": "5.2",
+        "title": "Forecast evaluation",
+        "description": "As a system evaluator, I want to calculate the accuracy of forecasts, so I can measure model performance.",
+        "priority": "Medium",
+        "estimate_days": 1
+      }
+    ]
+  },
+  {
+    "epic": "DevOps & Deployment",
+    "stories": [
+      {
+        "id": "6.1",
+        "title": "Deploy backend",
+        "description": "As a developer, I want to deploy the API backend online, so I can demo it easily.",
+        "priority": "High",
+        "estimate_days": 0.5
+      },
+      {
+        "id": "6.2",
+        "title": "API docs or dashboard",
+        "description": "As a stakeholder, I want a Swagger/OpenAPI interface or basic UI, so I can explore the system quickly.",
+        "priority": "Low",
+        "estimate_days": 1
+      }
+    ]
+  }
+]
